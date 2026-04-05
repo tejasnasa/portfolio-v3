@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TEJAS NASA — ENGINEERED FOR PERFORMANCE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#f8d8ff",
+                        "on-tertiary": "#442b00",
+                        "tertiary": "#ffd59c",
+                        "on-background": "#e5e2e1",
+                        "primary-fixed": "#b7eaff",
+                        "tertiary-fixed": "#ffddb1",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-container": "#cf5cff",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed": "#291800",
+                        "surface-tint": "#4cd6ff",
+                        "on-primary": "#003543",
+                        "surface": "#131313",
+                        "primary-fixed-dim": "#4cd6ff",
+                        "on-surface": "#e5e2e1",
+                        "on-primary-container": "#00566a",
+                        "tertiary-container": "#feb127",
+                        "surface-variant": "#353534",
+                        "on-surface-variant": "#bbc9cf",
+                        "secondary-fixed-dim": "#ecb2ff",
+                        "error-container": "#93000a",
+                        "outline-variant": "#3c494e",
+                        "on-tertiary-container": "#6b4700",
+                        "on-tertiary-fixed-variant": "#624000",
+                        "tertiary-fixed-dim": "#ffba49",
+                        "on-secondary-fixed": "#320047",
+                        "primary": "#a4e6ff",
+                        "on-secondary-fixed-variant": "#74009f",
+                        "background": "#131313",
+                        "on-secondary-container": "#480063",
+                        "on-primary-fixed": "#001f28",
+                        "primary-container": "#00d1ff",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary": "#520071",
+                        "outline": "#859399",
+                        "on-primary-fixed-variant": "#004e60",
+                        "surface-container": "#201f1f",
+                        "surface-dim": "#131313",
+                        "surface-bright": "#3a3939",
+                        "secondary": "#ecb2ff",
+                        "inverse-primary": "#00677f",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "inverse-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(133, 147, 153, 0.15);
+        }
+        .text-glow-primary {
+            text-shadow: 0 0 20px rgba(164, 230, 255, 0.3);
+        }
+        .void-bg {
+            background: radial-gradient(circle at 50% 50%, rgba(164, 230, 255, 0.03) 0%, rgba(19, 19, 19, 1) 70%);
+        }
+        .hero-title {
+            letter-spacing: -0.04em;
+            line-height: 0.9;
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .status-dot {
+            animation: pulse-green 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen overflow-x-hidden selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 max-w-[1440px] left-1/2 -translate-x-1/2 bg-transparent backdrop-blur-md">
+<a href="/" class="text-xl font-bold tracking-[-0.04em] text-[#e5e2e1] font-headline uppercase relative z-50">
+            TEJAS NASA
+        </a>
+<div class="hidden md:flex items-center gap-8 relative z-50">
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#a4e6ff] border-b border-[#a4e6ff] pb-1 transition-colors duration-300" href="/">Overview</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#e5e2e1]/60 hover:text-[#a4e6ff] transition-colors duration-300" href="/architecture">Architecture</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#e5e2e1]/60 hover:text-[#a4e6ff] transition-colors duration-300" href="/stack">Stack</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#e5e2e1]/60 hover:text-[#a4e6ff] transition-colors duration-300" href="/contact">Contact</a>
+</div>
+<div class="flex items-center gap-4 relative z-50">
+<a href="/resume.pdf" target="_blank" class="hidden md:flex bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-bold text-sm tracking-tighter uppercase scale-95 transition-transform hover:scale-100 items-center justify-center">
+            Resume
+        </a>
+</div>
+</nav>
+<main class="void-bg">
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col items-center justify-center pt-32 px-6 text-center relative overflow-hidden">
+<!-- Decorative atmospheric glows -->
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]"></div>
+<h1 class="hero-title font-headline font-extrabold text-6xl md:text-[8rem] lg:text-[10rem] text-on-background mb-8 max-w-6xl">
+                Hi, I'm Tejas Nasa.
+            </h1>
+<p class="font-body text-lg md:text-2xl text-on-surface-variant max-w-3xl mb-12 leading-relaxed">
+                A Backend &amp; Fullstack Engineer specializing in <span class="text-primary">distributed architectures</span>, real-time WebSockets, and <span class="text-secondary">AI/RAG pipelines</span>.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 items-center">
+<a href="/resume.pdf" target="_blank" class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold text-lg uppercase transition-all hover:shadow-[0_0_30px_rgba(164,230,255,0.4)] text-center flex items-center justify-center">
+                    Download Resume
+                </a>
+<a href="https://github.com/tejasnasa" target="_blank" class="glass-panel text-on-surface px-10 py-4 rounded-full font-headline font-bold text-lg uppercase flex items-center gap-2 hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined text-xl">terminal</span>
+                    View GitHub
+                </a>
+</div>
+</section>
+<!-- Projects (Masonry Grid) -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto" id="projects">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-xs tracking-[0.2em] text-primary uppercase block mb-4">Selected Works</span>
+<h2 class="font-headline text-5xl font-bold tracking-tighter">Engineering Achievements</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+<!-- Card 1 -->
+<div class="glass-panel p-8 rounded-xl flex flex-col gap-6 group hover:border-primary/50 transition-colors">
+<div class="flex justify-between items-center">
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low text-primary text-[10px] font-label font-bold px-3 py-1 rounded-full border border-outline-variant/30">FASTAPI</span>
+<span class="bg-surface-container-low text-primary text-[10px] font-label font-bold px-3 py-1 rounded-full border border-outline-variant/30">NEXT.JS</span>
+</div>
+<div class="flex items-center gap-1.5 bg-green-500/10 px-2 py-1 rounded-md border border-green-500/20">
+<span class="w-1.5 h-1.5 rounded-full bg-green-500 status-dot"></span>
+<span class="text-[9px] font-bold text-green-400 tracking-tighter uppercase">System Live</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl font-bold text-on-background">Illume — Repo Analyzer</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                        High-performance AI engine for deep codebase analysis and vector search indexing.
+                    </p>
+<div class="grid grid-cols-2 gap-4 mt-4 pt-6 border-t border-outline-variant/20">
+<div>
+<span class="block font-headline text-2xl font-bold text-secondary">500+</span>
+<span class="font-label text-[10px] uppercase text-on-surface-variant tracking-wider">File Dependencies</span>
+</div>
+<div>
+<span class="block font-headline text-2xl font-bold text-primary">5k+</span>
+<span class="font-label text-[10px] uppercase text-on-surface-variant tracking-wider">Embeddings</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 mt-4">
+<a href="https://illume.tejasnasa.me" target="_blank" class="bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 rounded-lg py-2 text-[10px] font-bold uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-sm">rocket_launch</span> Live App
+                        </a>
+<a href="https://github.com/tejasnasa/illume" target="_blank" class="glass-panel hover:bg-surface-container-highest text-on-surface rounded-lg py-2 text-[10px] font-bold uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-sm">terminal</span> GitHub
+                        </a>
+</div>
+<a href="/project/illume" class="mt-3 block text-center py-2 text-[9px] font-label uppercase tracking-widest text-on-surface/40 hover:text-primary transition-colors border border-outline-variant/10 rounded-lg hover:border-primary/30">Architecture Deep Dive</a>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-8 rounded-xl flex flex-col gap-6 md:mt-12 group border-primary/20 hover:border-primary/60 transition-all bg-gradient-to-br from-surface-container-highest/20 to-transparent">
+<div class="flex justify-between items-center">
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low text-secondary text-[10px] font-label font-bold px-3 py-1 rounded-full border border-outline-variant/30">NODE.JS</span>
+<span class="bg-surface-container-low text-secondary text-[10px] font-label font-bold px-3 py-1 rounded-full border border-outline-variant/30">REDIS</span>
+</div>
+<div class="flex items-center gap-1.5 bg-green-500/10 px-2 py-1 rounded-md border border-green-500/20">
+<span class="w-1.5 h-1.5 rounded-full bg-green-500 status-dot"></span>
+<span class="text-[9px] font-bold text-green-400 tracking-tighter uppercase">System Live</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl font-bold text-on-background">Nimbus — Real-time Workspace</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                        Distributed real-time engine featuring CRDT synchronization and sub-millisecond event broadcasting across nodes.
+                    </p>
+<div class="space-y-4 mt-4 pt-6 border-t border-outline-variant/20">
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase text-on-surface-variant tracking-wider">Performance</span>
+<span class="font-headline text-lg font-bold text-secondary">5,000+ ms broadcasts</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase text-on-surface-variant tracking-wider">Infrastructure</span>
+<span class="font-headline text-lg font-bold text-primary">3 Distributed Nodes</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 mt-4">
+<a href="https://nimbus.tejasnasa.me" target="_blank" class="bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 rounded-lg py-2 text-[10px] font-bold uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-sm">rocket_launch</span> Live App
+                        </a>
+<a href="https://github.com/tejasnasa/nimbus" target="_blank" class="glass-panel hover:bg-surface-container-highest text-on-surface rounded-lg py-2 text-[10px] font-bold uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-sm">terminal</span> GitHub
+                        </a>
+</div>
+<a href="/project/nimbus" class="mt-3 block text-center py-2 text-[9px] font-label uppercase tracking-widest text-on-surface/40 hover:text-secondary transition-colors border border-outline-variant/10 rounded-lg hover:border-secondary/30">Architecture Deep Dive</a>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-8 rounded-xl flex flex-col gap-6 group hover:border-tertiary/50 transition-colors">
+<div class="flex justify-between items-center">
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low text-tertiary text-[10px] font-label font-bold px-3 py-1 rounded-full border border-outline-variant/30">REACT 19</span>
+<span class="bg-surface-container-low text-tertiary text-[10px] font-label font-bold px-3 py-1 rounded-full border border-outline-variant/30">DRIZZLE</span>
+</div>
+<div class="flex items-center gap-1.5 bg-green-500/10 px-2 py-1 rounded-md border border-green-500/20">
+<span class="w-1.5 h-1.5 rounded-full bg-green-500 status-dot"></span>
+<span class="text-[9px] font-bold text-green-400 tracking-tighter uppercase">System Live</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl font-bold text-on-background">Echoes — Social Media</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                        Massively scalable social graph implementation with high-concurrency nested record management.
+                    </p>
+<div class="grid grid-cols-2 gap-4 mt-4 pt-6 border-t border-outline-variant/20">
+<div>
+<span class="block font-headline text-2xl font-bold text-tertiary">50k+</span>
+<span class="font-label text-[10px] uppercase text-on-surface-variant tracking-wider">Nested Records</span>
+</div>
+<div>
+<span class="block font-headline text-2xl font-bold text-error">50%</span>
+<span class="font-label text-[10px] uppercase text-on-surface-variant tracking-wider">API Reduction</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 mt-4">
+<a href="https://echoes.tejasnasa.me" target="_blank" class="bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 rounded-lg py-2 text-[10px) font-bold uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-sm">rocket_launch</span> Live App
+                        </a>
+<a href="https://github.com/tejasnasa/echoes" target="_blank" class="glass-panel hover:bg-surface-container-highest text-on-surface rounded-lg py-2 text-[10px] font-bold uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-sm">terminal</span> GitHub
+                        </a>
+</div>
+<a href="/project/echoes" class="mt-3 block text-center py-2 text-[9px] font-label uppercase tracking-widest text-on-surface/40 hover:text-tertiary transition-colors border border-outline-variant/10 rounded-lg hover:border-tertiary/30">Architecture Deep Dive</a>
+</div>
+</div>
+</section>
+<!-- Skills Bento Box -->
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto" id="stack">
+<span class="font-label text-xs tracking-[0.2em] text-secondary uppercase block mb-4 text-center">Technical Core</span>
+<h2 class="font-headline text-5xl font-bold tracking-tighter text-center mb-16">The Engine Room</h2>
+<div class="grid grid-cols-4 md:grid-cols-12 grid-rows-2 gap-4 h-auto md:h-[600px]">
+<!-- Main Tech -->
+<div class="col-span-4 md:col-span-6 row-span-1 glass-panel rounded-xl p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl text-primary">memory</span>
+<div>
+<h4 class="font-headline text-2xl font-bold mb-2">Systems Architecture</h4>
+<p class="text-on-surface-variant text-sm">Distributed systems, Event-driven logic, Real-time synchronization pipelines.</p>
+</div>
+</div>
+<!-- Languages -->
+<div class="col-span-4 md:col-span-3 glass-panel rounded-xl p-6 flex flex-col items-center justify-center gap-4 bg-primary/5">
+<div class="flex flex-wrap justify-center gap-3">
+<span class="text-2xl font-bold font-headline text-primary">TS</span>
+<span class="text-2xl font-bold font-headline text-on-surface">PY</span>
+<span class="text-2xl font-bold font-headline text-on-surface">JS</span>
+<span class="text-2xl font-bold font-headline text-primary">SQL</span>
+</div>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Primary Languages</span>
+</div>
+<!-- Database -->
+<div class="col-span-4 md:col-span-3 glass-panel rounded-xl p-6 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-tertiary">database</span>
+<span class="text-[10px] font-label text-on-surface-variant">DB OPS</span>
+</div>
+<div class="font-headline font-bold text-xl uppercase">PostgreSQL + Redis</div>
+</div>
+<!-- Web Stack -->
+<div class="col-span-4 md:col-span-4 glass-panel rounded-xl p-8 flex items-center gap-6">
+<div class="h-full w-1 bg-secondary rounded-full"></div>
+<div>
+<h4 class="font-headline font-bold text-xl uppercase mb-1">Web Foundation</h4>
+<p class="text-xs text-on-surface-variant">Next.js, FastAPI, Node.js, WebSockets (Socket.io)</p>
+</div>
+</div>
+<!-- Infrastructure -->
+<div class="col-span-4 md:col-span-8 glass-panel rounded-xl p-8 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary mb-2">speed</span>
+<span class="block font-label text-[10px]">TURBOREPO</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary mb-2">cloud</span>
+<span class="block font-label text-[10px]">VERCEL</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary mb-2">hub</span>
+<span class="block font-label text-[10px]">CI/CD</span>
+</div>
+</div>
+<div class="hidden md:block text-right">
+<span class="font-headline text-4xl font-black text-on-surface-variant/20 tracking-tighter">INFRASTRUCTURE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Footer Buffer -->
+<section class="py-32 px-6 text-center" id="contact">
+<h2 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter mb-12 opacity-20">BUILDING THE FUTURE.</h2>
+<div class="flex justify-center gap-8">
+<a class="font-headline text-2xl hover:text-primary transition-all flex items-center gap-3" href="mailto:tejasnasa1908@gmail.com">
+                    Let's Architect <span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 left-0 right-0 z-50 flex gap-4 md:gap-8 px-6 md:px-8 py-3 items-center justify-center bg-[#353534]/40 backdrop-blur-xl rounded-full mb-8 max-w-fit mx-auto border border-[#859399]/15 shadow-2xl">
+<div class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40 hidden md:block">
+            © 2026 TEJAS NASA — ENGINEERED FOR PERFORMANCE
+        </div>
+<div class="flex gap-6 items-center">
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40 hover:text-[#ecb2ff] hover:scale-110 transition-all" href="https://github.com/tejasnasa" target="_blank">GitHub</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40 hover:text-[#ecb2ff] hover:scale-110 transition-all" href="https://linkedin.com/in/tejasnasa" target="_blank">LinkedIn</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#a4e6ff] hover:text-[#ecb2ff] hover:scale-110 transition-all" href="mailto:tejasnasa1908@gmail.com">Email</a>
+</div>
+</footer>
+<!-- Background Decoration -->
+<div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+<div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] rounded-full bg-secondary/5 blur-[150px]"></div>
+</div>
+</body></html>

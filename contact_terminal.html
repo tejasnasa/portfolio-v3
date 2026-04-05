@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | THE ENGINEERING EDITORIAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#feb127",
+                    "secondary": "#ecb2ff",
+                    "surface-variant": "#353534",
+                    "secondary-container": "#cf5cff",
+                    "on-background": "#e5e2e1",
+                    "primary-fixed-dim": "#4cd6ff",
+                    "tertiary-fixed-dim": "#ffba49",
+                    "primary": "#a4e6ff",
+                    "on-tertiary-fixed": "#291800",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-fixed-variant": "#004e60",
+                    "tertiary-fixed": "#ffddb1",
+                    "on-secondary-container": "#480063",
+                    "on-surface": "#e5e2e1",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed": "#001f28",
+                    "secondary-fixed": "#f8d8ff",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container-highest": "#353534",
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#3c494e",
+                    "on-tertiary-container": "#6b4700",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-container": "#00566a",
+                    "on-tertiary-fixed-variant": "#624000",
+                    "on-secondary": "#520071",
+                    "error": "#ffb4ab",
+                    "on-tertiary": "#442b00",
+                    "surface-container": "#201f1f",
+                    "inverse-on-surface": "#313030",
+                    "on-secondary-fixed-variant": "#74009f",
+                    "background": "#131313",
+                    "on-secondary-fixed": "#320047",
+                    "inverse-primary": "#00677f",
+                    "error-container": "#93000a",
+                    "surface-container-low": "#1c1b1b",
+                    "primary-fixed": "#b7eaff",
+                    "outline": "#859399",
+                    "on-surface-variant": "#bbc9cf",
+                    "tertiary": "#ffd59c",
+                    "secondary-fixed-dim": "#ecb2ff",
+                    "surface": "#131313",
+                    "surface-bright": "#3a3939",
+                    "surface-tint": "#4cd6ff",
+                    "primary-container": "#00d1ff",
+                    "on-primary": "#003543"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-blur {
+        backdrop-filter: blur(16px);
+      }
+      .asymmetric-glow {
+        background: radial-gradient(circle at top left, rgba(164, 230, 255, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at bottom right, rgba(236, 178, 255, 0.05) 0%, transparent 50%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen overflow-x-hidden selection:bg-primary/30">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 max-w-[1440px] left-1/2 -translate-x-1/2 bg-[#131313]/40 backdrop-blur-md">
+<a href="/" class="text-xl font-bold tracking-[-0.04em] text-[#e5e2e1] font-headline uppercase relative z-50">
+            TEJAS NASA
+        </a>
+<div class="hidden md:flex items-center gap-8 relative z-50">
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#e5e2e1]/60 hover:text-[#a4e6ff] transition-colors duration-300" href="/">Overview</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#e5e2e1]/60 hover:text-[#a4e6ff] transition-colors duration-300" href="/architecture">Architecture</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#e5e2e1]/60 hover:text-[#a4e6ff] transition-colors duration-300" href="/stack">Stack</a>
+<a class="font-['Space_Grotesk'] tracking-tighter uppercase text-sm text-[#a4e6ff] border-b border-[#a4e6ff] pb-1 transition-colors duration-300" href="/contact">Contact</a>
+</div>
+<div class="flex items-center gap-4 relative z-50">
+<a href="/resume.pdf" target="_blank" class="hidden md:flex bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-bold text-sm tracking-tighter uppercase scale-95 transition-transform hover:scale-100 items-center justify-center">
+            Resume
+        </a>
+</div>
+</nav>
+<main class="relative pt-32 pb-40 px-6 max-w-7xl mx-auto flex flex-col items-center justify-center min-h-screen">
+<!-- Background Ambient Glows -->
+<div class="fixed top-1/4 -left-20 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full -z-10"></div>
+<div class="fixed bottom-1/4 -right-20 w-[500px] h-[500px] bg-secondary/5 blur-[120px] rounded-full -z-10"></div>
+<!-- Hero Section -->
+<div class="text-center mb-16 space-y-4">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-tight">
+                Let's Architect <span class="text-primary italic">the Future.</span>
+</h1>
+<p class="font-label text-on-surface-variant tracking-[0.2em] uppercase text-xs">Available for strategic engineering partnerships</p>
+</div>
+<!-- Centered Contact Card -->
+<div class="w-full max-w-3xl bg-[#353534]/40 glass-blur rounded-xl border border-white/10 shadow-2xl p-1 md:p-12 asymmetric-glow">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 md:p-0">
+<!-- Terminal Interface Mock -->
+<div class="flex flex-col h-full min-h-[320px] bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden">
+<div class="bg-surface-container-high px-4 py-2 flex items-center gap-2 border-b border-outline-variant/20">
+<div class="flex gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-error/40"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary/40"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary/40"></div>
+</div>
+<span class="text-[10px] font-label text-on-surface-variant ml-4 tracking-widest uppercase">message.sh</span>
+</div>
+<div class="p-6 font-mono text-sm space-y-4 flex-grow text-primary/80">
+<div class="flex gap-3">
+<span class="text-secondary">visitor@tejas-nasa:~$</span>
+<span>ssh contact@architect</span>
+</div>
+<div class="text-on-surface-variant/60 italic leading-relaxed">
+                            // Initialize connection...<br/>
+                            // Establishing secure tunnel...
+                        </div>
+<div class="flex gap-2">
+<span class="text-secondary">msg:</span>
+<span class="inline-block w-2 h-5 bg-primary animate-pulse align-middle"></span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low border-t border-outline-variant/10 text-center">
+<p class="text-[10px] text-on-surface-variant font-label tracking-tighter uppercase">Status: Terminal Ready</p>
+</div>
+</div>
+<!-- Direct Links & Info -->
+<div class="flex flex-col justify-center space-y-10">
+<div class="space-y-2">
+<h2 class="font-headline text-2xl font-semibold tracking-tight">Reach Out</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed">Whether it's a technical deep-dive or a large-scale architecture query, my stack is open.</p>
+</div>
+<div class="space-y-4">
+<a class="group flex items-center justify-between p-4 bg-surface-container-low hover:bg-primary/10 rounded-lg transition-all duration-300 border border-transparent hover:border-primary/20" href="mailto:tejasnasa1908@gmail.com">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<span class="text-sm font-medium">Email</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-primary transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-surface-container-low hover:bg-secondary/10 rounded-lg transition-all duration-300 border border-transparent hover:border-secondary/20" href="https://linkedin.com/in/tejasnasa" target="_blank">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="database">database</span>
+<span class="text-sm font-medium">LinkedIn</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-secondary transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-surface-container-low hover:bg-tertiary/10 rounded-lg transition-all duration-300 border border-transparent hover:border-tertiary/20" href="https://github.com/tejasnasa" target="_blank">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="code">code</span>
+<span class="text-sm font-medium">GitHub</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-tertiary transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="pt-4">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(164,230,255,0.5)]"></div>
+<span class="text-[10px] font-label uppercase tracking-[0.2em] text-on-surface-variant">Global Availability: GMT+5:30</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Asymmetric Detail -->
+<div class="mt-24 w-full grid grid-cols-1 md:grid-cols-3 gap-8 text-left border-t border-outline-variant/10 pt-12">
+<div class="space-y-2">
+<span class="text-primary font-label text-[10px] tracking-widest uppercase">Encryption</span>
+<p class="text-xs text-on-surface-variant font-mono">256-bit Secure Layer</p>
+</div>
+<div class="space-y-2">
+<span class="text-secondary font-label text-[10px] tracking-widest uppercase">Response Time</span>
+<p class="text-xs text-on-surface-variant font-mono">&lt; 24 Engineering Hours</p>
+</div>
+<div class="space-y-2">
+<span class="text-tertiary font-label text-[10px] tracking-widest uppercase">Location</span>
+<p class="text-xs text-on-surface-variant font-mono">Distributed Systems / Remote</p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 left-0 right-0 z-50 flex gap-4 md:gap-8 px-6 md:px-8 py-3 items-center justify-center bg-[#353534]/40 backdrop-blur-xl rounded-full mb-8 max-w-fit mx-auto border border-[#859399]/15 shadow-2xl">
+<div class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40 hidden md:block">
+            © 2026 TEJAS NASA — ENGINEERED FOR PERFORMANCE
+        </div>
+<div class="flex gap-6 items-center">
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40 hover:text-[#ecb2ff] hover:scale-110 transition-all" href="https://github.com/tejasnasa" target="_blank">GitHub</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#e5e2e1]/40 hover:text-[#ecb2ff] hover:scale-110 transition-all" href="https://linkedin.com/in/tejasnasa" target="_blank">LinkedIn</a>
+<a class="font-['Inter'] text-[10px] tracking-widest uppercase text-[#a4e6ff] hover:text-[#ecb2ff] hover:scale-110 transition-all" href="mailto:tejasnasa1908@gmail.com">Email</a>
+</div>
+</footer>
+</body></html>
