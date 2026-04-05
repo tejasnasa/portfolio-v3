@@ -1,34 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/architecture",
-      "destination": "/projects_architecture_gallery.html"
-    },
-    {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/project/illume",
-      "destination": "/project_deep_dive_illume.html"
-    },
-    {
-      "source": "/project/nimbus",
-      "destination": "/project_deep_dive_nimbus.html"
-    },
-    {
-      "source": "/project/echoes",
-      "destination": "/project_deep_dive_echoes.html"
-    },
-    {
-      "source": "/stack",
-      "destination": "/technical_stack_infrastructure.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact_terminal.html"
-    }
-  ]
+  "trailingSlash": false
 }
